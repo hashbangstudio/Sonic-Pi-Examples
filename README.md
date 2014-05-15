@@ -9,8 +9,8 @@ To use these examples:
   * This can be done in two ways
     1. Click on: Start Menu > Programming > Sonic-Pi
     2. Using the Terminal 
-      *Open LXTerminal by double clicking on the desktop icon
-      *Type `sonic-pi &` and press enter
+      * Open LXTerminal by double clicking on the desktop icon
+      * Type `sonic-pi &` and press enter
       * Note: Do not quit the terminal as it will also quit sonic-pi!
 2. Open any of these files in a text editor
 3. Copy and Paste all the text from a file into a workspace in Sonic-Pi
