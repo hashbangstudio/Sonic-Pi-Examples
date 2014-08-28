@@ -3,6 +3,8 @@ Sonic-Pi-Examples
 
 Contains simple examples of the usage of Sonic-Pi
 
+Note: These have only been tested with Sonic-Pi v1
+
 To use these examples:
 
 1. Open Sonic-Pi
