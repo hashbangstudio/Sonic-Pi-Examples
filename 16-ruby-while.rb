@@ -3,8 +3,10 @@
 
 note = 70
 # The while loop must be completed with an end
+# A while loop performs the test at the beginning of loop iteration
+# The last note to play will be the note 77
 while (note < 78)
-    puts "note is=", note,"is note less than 78?", (note < 78)
+    puts "note is=#{ note} , is note less than 78?#{(note < 78)}"
     play note
     sleep 0.5
     note += 1 # note = note+1

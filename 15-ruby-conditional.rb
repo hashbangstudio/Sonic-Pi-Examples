@@ -19,8 +19,8 @@
 # This uses conditionals to control whether a piece of code is executed
 # This is based on the current value of the variable : note
 note = 59
-puts "note=", note
-puts "is note equal to 59?", (note == 59)
+puts "note=#{note}"
+puts "is note equal to 59?#{(note == 59)}"
 if (note == 59)
    puts "this is executed as note is equal"
    play note
@@ -30,8 +30,8 @@ sleep 1
 
 # The value of note is now different
 note = 61
-puts "note=", note
-puts "is note equal to 59?", (note == 59)
+puts "note=#{note}"
+puts "is note equal to 59?#{(note == 59)}"
 if (note == 59)
    puts "this is not executed"
    play note
@@ -40,8 +40,9 @@ end
 sleep 1
 
 note = 66
-puts "note=", note
-puts "is note not equal to 59?", (note != 59)
+puts "note=#{note}"
+
+puts "is note not equal to 59?#{(note != 59)}"
 if (note != 59)
    puts "this is executed as note not equal"
    play note
@@ -51,8 +52,8 @@ sleep 1
 
 # conditional : if else
 note = 64
-puts "note=", note
-puts "is note equal to 59?", (note == 59)
+puts "note=#{note}"
+puts "is note equal to 59?#{(note == 59)}"
 if (note == 59)
    puts "this is not executed"
    play note
@@ -79,7 +80,7 @@ transitionNote = 68
 highestNote = 77
 
 # This will repeat forever unless the loop is broken out of
-repeat do
+loop do
     play note
     puts "Is note more than or equal to highestNote?"
     puts (note >= highestNote)

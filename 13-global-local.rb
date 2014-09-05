@@ -1,22 +1,22 @@
-# The tempo is a global variable and is the same for all threads
-# The synth is a local variable and is different for different threads
-# Even though we set the tempo in one thread it is the same for both
+# You can see that the threads use different tempo/bpm
+# The right hand thread inherits the setting from the main section
+# The left hand thread use a tempo local to that thread 
 
-puts "before threads tempo =", current_tempo
+use_bpm 40
+puts "before threads tempo = #{current_bpm}"
 
 #left hand
 in_thread do
-    with_tempo 120
-    with_synth "saw_beep"
-    puts "In left hand tempo = ", current_tempo
+    use_bpm 120
+    use_synth "saw_beep"
+    puts "In left hand tempo = #{current_bpm}"
     play_pattern [60,68,76]
 end
 
 #right hand
 in_thread do
-    with_synth "dull_bell"
-    puts "In right hand tempo = ", current_tempo    
+    use_synth "dull_bell"
+    puts "In right hand tempo = #{current_bpm}"    
     sleep 0.25
     play_pattern [76,68,60]
 end
-

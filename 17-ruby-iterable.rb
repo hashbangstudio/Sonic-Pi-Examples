@@ -13,7 +13,7 @@ for note in note_pattern
 end
 # Be aware that the variable note now exists after this loop
 # This means we can do this
-puts "note is ", note
+puts "note is #{note}"
 
 sleep 1
 
@@ -25,4 +25,3 @@ note_pattern.each do |elementValue|
     sleep 0.5
 end
 # the variable elementValue does not exist outside of the loop
-

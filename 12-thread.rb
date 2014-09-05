@@ -7,7 +7,7 @@
 # The notes play alternately and then simultaneously in each thread
 
 #left-hand
-in_thread do
+in_thread(name: :lh) do
     play 60
     sleep 1
     play 62
@@ -22,8 +22,8 @@ in_thread do
 end
 
 #right-hand
-in_thread do
-    with_synth "saw_beep"
+in_thread(name: :rh) do
+    use_synth "saw"
     sleep 0.5
     play 68
     sleep 1
@@ -37,4 +37,3 @@ in_thread do
     sleep 1
     play 58  
 end
-
