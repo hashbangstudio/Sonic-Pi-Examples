@@ -3,7 +3,7 @@ Sonic-Pi-Examples
 
 Contains simple examples of the usage of Sonic-Pi
 
-Note: These have only been tested with Sonic-Pi v1
+NOTE: Only compatible with version 2.0 of Sonic-Pi
 
 To use these examples:
 
